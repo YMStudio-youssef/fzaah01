@@ -1,0 +1,211 @@
+/* framework start */
+.delete-btn{
+    background-color: #ff0000;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.edit-btn{
+    background-color: #fbbf24;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.add-btn{
+    background-color: #144843;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* framework end */
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+.search-input::placeholder {
+  color: #000;
+}
+
+.contact-info {
+  text-align: center;
+  margin-right: 20px;
+  display: flex;
+  font-size: 12px;
+}
+
+.contact-info span {
+  margin: 0 10px;
+}
+
+.header-left {
+  display: flex;
+  order: 10;
+  align-items: center;
+}
+
+.header-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-left li {
+  margin: 10px;
+}
+
+.header-left li i {
+  color: #000;
+}
+
+.header-left li:last-child {
+  margin-right: 0;
+}
+
+.header-left p {
+  margin: 0;
+}
+
+.menu-icon{
+    display: none;
+}
+.responsive-menu{
+    display: none;
+}
+.responsive-menu .search-box{
+    display: none;
+}
+
+/* Product Info Styles Start */
+.product-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+}
+.product-info .image img{
+    width: 100%;
+}
+.product-info .content ul{
+    display: flex;
+}
+.product-info .content ul li i{
+    color: #fbbf24;
+}
+/* Product Info Styles End */
+
+/* order section style start */
+.order{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.order .addOrderForm .table {
+    margin-top: 20px;
+}
+.order .addOrderForm{
+    margin-top: 20px;
+}
+.order .addOrderForm form{}
+.order .addOrderForm form input{
+    width: 49.6%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.order .addOrderForm form .radioBtn{
+    width: 10px;
+}
+.order .addOrderForm form .full-input{
+    width: 100%;
+}
+.order .addOrderForm button{
+    background-color: #144843;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    cursor: pointer;
+}
+.order .addOrderForm button:last-child{
+    width: 100%;
+}
+/* order section style end */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .logo-container{
+    order: -1;
+    display: flex;
+    align-items: center;
+  }
+  .header-center {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .menu-icon i {
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .responsive-menu {
+    display: none;
+  }
+  
+  .responsive-menu .search-box{
+    margin: 20px;
+    display: block;
+    padding: 0;
+    text-align: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+}
